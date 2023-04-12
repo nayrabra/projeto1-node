@@ -19,7 +19,7 @@ app.get("/consulta/:parametro", function(req,res){
 })
 
 //rota com parametro opcional
-app.get("/cadastro/:nome?", function(req,res){
+app.get("/cadastro/tal?", function(req,res){
     //req --> dados enviados pelo cliente
     var nome = req.params.nome;
     if (nome){
